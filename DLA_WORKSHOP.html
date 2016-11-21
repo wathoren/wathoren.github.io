@@ -70,9 +70,10 @@ $(window).resize(function(){
 
 // To initially run the function:
 $(window).resize();
-
+var count =0;
 // Executes on form submit
 function ValidationEvent() {
+	count = count +1;
 // Storing Field Values In Variables
 var first = document.getElementById("first").value;
 var second = document.getElementById("second").value;
@@ -88,9 +89,19 @@ window.open("https://wathoren.github.io/dlaworkshop3.html");
 
 
 } else {
+	
+	if count < 2 {
 alert("Try again"); // Try Markov
 return false;
+	}
+	if count > 1 {
+alert("Try again2"); // Try Markov
+return false;
+	}
+		
 }
+	
+	
 }
 
 </script>
