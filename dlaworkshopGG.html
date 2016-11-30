@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+
+	#child {
+	    padding: 10% 0;
+	}
+	#div1{
+	    display: none;
+	    font-size:800%;
+
+	}
+	#final{
+	    width: 50%;
+
+	}
+	input[type="text"] {
+	  
+	  width: 50%;
+	  height: 120px;
+	  font-size:50%;
+	  padding: 10px;
+	  border: none;
+	  border-bottom: solid 1px #000;
+	  box-shadow: inset 1px 1px 2px 0 #000;
+	  transition: box-shadow 0.3s;
+	  background-color: #faa128;
+	  color: #01011e;
+
+	}
+
+	input[type="submit"] {
+	  
+	    background-color: #faa128;
+	    border: .6px solid #faa128;
+	    color: #01011e;
+	    padding: 16px 32px;
+	    text-decoration: none;
+	    margin: 4px 2px;
+	    cursor: pointer;
+    font-size: 64px;
+
+	}
+	input:hover
+	{
+  		background-color: #faa128;
+  		color: #01011e;
+	}
+	body {
+	  
+	  background-color: #01011e;
+ 	font-family: 'PT Sans', sans-serif;
+	  font-weight: bold;
+	  color:#faa128;
+	}
+p{
+	  
+	 font-size:800%;
+	}
+	html {
+	  text-align: center;
+	}
+
+#finallo {
+    background-color: #faa128; /* Green */
+    border: none;
+    color: #01011e;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 64px;
+}
+</style>
+<script type="text/javascript"><!--  
+/* Script by: www.jtricks.com 
+ * Version: 20090221 
+ * Latest version: 
+ * www.jtricks.com/javascript/blocks/showinghiding.html 
+ */  
+ var count =1;
+  var counttwo =1;
+
+function showPageElement(what)  
+{  
+count++;
+// Storing Field Values In Variables
+var second = document.getElementById("second").value;
+
+
+// Conditions
+if (second == 'Gold' || second == 'gold' || second == 'Au' )
+{
+    var youkno = document.getElementById("myAudio"); 
+	youkno.play();
+	var obj = typeof what == 'object'  
+        ? what : document.getElementById(what);  
+  
+    obj.style.display = 'block';  
+    return false;  
+    
+}  
+else {
+  
+if (count < 5) {
+alert("Two-letter abbreviations in a visual representation"); // Try Markov
+return false;
+
+}
+if (4<count ) {
+alert("Connect them in order on a periodic table."); // Try Markov
+return false;
+
+}
+
+
+  }  
+
+  } 
+
+
+function ValidationEvent() {
+	counttwo++;
+// Storing Field Values In Variables
+var answer = document.getElementById("final").value;
+
+// Conditions
+if (answer == 'trunks' || answer == 'Trunks' )
+{
+
+window.open("/Users/hershelwathore/GitHub/wathoren.github.io/dlaworkshop6.html");
+ 
+} 
+else {
+
+if (counttwo < 4) {
+alert("Press Next Part again to hear the sound effect "); // Try Markov
+return false;
+
+}
+if (counttwo>3 ) {
+alert("Anime."); // Try Markov
+return false;
+
+}
+
+
+}
+
+}
+//--></script> 
+
+<body>
+<audio id="myAudio" src="ssj1.mp3">
+  
+</audio>
+<div id="parent">
+		 <div id="child">
+
+			      						<p>Connect the Dots<br>
+			      						<br>Rn &#10148; At &#10148; Po &#10148; Pb &#10148; Bi &#10148; Pb &#10148; Tl &#10148; Hg <br></p>
+										<br><form >
+										<br>
+										<p>
+										<input type="text" id="second"> 
+										</p>
+
+
+										<br>
+
+										</form>
+											<button  id="finallo"
+    										onclick="showPageElement('div1')">  
+											Next Part</button> 
+										
+										<div id="div1"><br>
+										<br><br>
+										Son of the main character's rival<br><form><input type="text" id="final"><br>
+										<input type="submit" value="Submit" id="lastu" onclick="return ValidationEvent()">
+										</form>
+
+
+										</div>
+			      
+		</div>
+</div>
+
+</body>
+</html>
+

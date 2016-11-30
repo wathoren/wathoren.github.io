@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+#form2 {
+    opacity: 1; 
+    background: #fff;
+    -webkit-transition: opacity linear 1s;
+    -moz--transition: opacity linear 1s;
+    -transition: opacity linear 1s;
+}
+#form2.hide {
+    opacity: 0;
+    -webkit-transition: opacity linear 1s;
+    -moz--transition: opacity linear 1s;
+    -transition: opacity linear 1s;
+	#parent {
+	    padding: 10% 0;
+	}
+</style>
+<script>
+
+document.querySelector('#toggle2').onclick = function(){
+    var el = document.querySelector('#form2');
+    el.className = el.className.length ? '' : 'hide';
+};
+
+function showHide(){
+    var toggleStyle = document.querySelector('#form').style;
+    toggleStyle.display = toggleStyle.display ? '' : 'none';
+}
+
+
+</script>
+
+<body>
+
+<div id="parent">
+		 <div id="child">
+
+			      						<p>w = 1<br>x - 106 = y <br>z = 8y - 317<br>4x + 3y = z - 225</p>
+										<br><form >
+										<br>
+										<p>w = <input type="text" id="first">
+										x = <input type="text" id="second"> 
+										y = <input type="text" id="third">
+										z = <input type="text" id="fourth"></p>
+
+
+										<br><button id="toggle2" >Next Part</button>
+										</form>
+										<span id="form2">
+										alkdsjflslkfjlajslfjksjfjls
+										</span>
+			      
+		</div>
+</div>
+
+</body>
+</html>
+

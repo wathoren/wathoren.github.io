@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+	#form2 {
+    opacity: 1; 
+    background: #fff;
+    -webkit-transition: opacity linear 1s;
+    -moz--transition: opacity linear 1s;
+    -transition: opacity linear 1s;
+}
+#form2.hide {
+    opacity: 0;
+    -webkit-transition: opacity linear 1s;
+    -moz--transition: opacity linear 1s;
+    -transition: opacity linear 1s;
+}
+
+</style>
+<script>
+document.querySelector('#toggle2').onclick = function(){
+    var el = document.querySelector('#form2');
+    el.className = el.className.length ? '' : 'hide';
+};
+
+function showHide(){
+    var toggleStyle = document.querySelector('#form').style;
+    toggleStyle.display = toggleStyle.display ? '' : 'none';
+}
+
+</script>
+
+<body>
+
+<div id="parent">
+		 <div id="child">
+
+
+
+<button id="toggle2">toggle2</button> <span id="form2">bonus: toggle visibility using opacity/css</span>
+
+									
+			      
+		</div>
+</div>
+
+</body>
+</html>
+

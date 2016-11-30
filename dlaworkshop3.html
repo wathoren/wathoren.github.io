@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+	#parent {
+	    padding: 10% 0;
+	}
+
+	#child {
+	    padding: 10% 0;
+	}
+
+	input[type="text"] {
+	  
+
+	  width: 10px;
+	  padding: 10px;
+	  border: none;
+	  border-bottom: solid 1px #000;
+	  box-shadow: inset 1px 1px 2px 0 #000;
+	  transition: box-shadow 0.3s;
+	  background-color: #dd1021;
+	  color: #ffc300;
+
+	}
+
+	input[type="submit"] {
+	  
+	    background-color: #dd1021;
+	    border: .6px solid black;
+	    color: black;
+	    padding: 16px 32px;
+	    text-decoration: none;
+	    margin: 4px 2px;
+	    cursor: pointer;
+
+	}
+	input:hover
+{
+  background-color: #ffc300;
+  color: red;
+}
+	body {
+	  
+	  background-color: #dd1021;
+	  color: #ffc300;
+	  font-family: 'PT Sans', sans-serif;
+	  font-weight: bold;
+	}
+
+	p{
+	  
+	 font-size:800%;
+	}
+
+	html {
+	  text-align: center;
+	}
+</style>
+
+<script>
+
+var count =1;
+$(window).resize(function(){
+
+	$('.className').css({
+		position:'absolute',
+		left: ($(window).width() - $('.className').outerWidth())/2,
+		top: ($(window).height() - $('.className').outerHeight())/2
+	});
+
+});
+
+// To initially run the function:
+$(window).resize();
+
+// Executes on form submit
+function ValidationEvent() {
+	count++;
+// Storing Field Values In Variables
+var first = document.getElementById("first").value;
+var second = document.getElementById("second").value;
+var third = document.getElementById("third").value;
+var fourth = document.getElementById("fourth").value;
+
+// Conditions
+if ((first == '1' && second == '9' && third == '4' && fourth == '0') ||  (first == '1' && second == '9' && third == '3' && fourth == '8')  )
+{
+
+window.open("/Users/hershelwathore/GitHub/wathoren.github.io/dlaworkshop3a.html");
+
+} 
+else {
+
+if (2<count < 4) {
+alert("Try again. Hint: Google Search the Coordinates"); // Try Markov
+return false;
+
+}
+if (3<count<6 ) {
+alert("Try again. Hint: The subscript zero is a sign used in physics"); // Try Markov
+return false;
+
+}
+if (count >5) {
+alert("Try again. Hint: Where and WHEN did Mcdonalds start?"); // Try Markov
+return false;
+
+}
+
+}
+
+}
+
+</script>
+
+<body oncontextmenu="return false">
+
+<div id="parent">
+		 <div id="child">
+
+			      
+										<img src="/Users/hershelwathore/GitHub/wathoren.github.io/mcdonaldsknot.png"><br>
+										<p>34.1255&deg; N, 117.2946&deg; W</p><br><form >
+										  <input type="text" id="first" maxlength="1">
+										  <input type="text" id="second" maxlength="1">
+										  <input type="text" id="third" maxlength="1">
+										  <input type="text" id="fourth" maxlength="1">
+										 <br><br>
+										  <input type="submit" value="Submit" onclick="return ValidationEvent()">
+										</form>
+			      
+		</div>
+</div>
+
+</body>
+</html>
+

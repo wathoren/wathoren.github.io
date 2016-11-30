@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+body{
+		background-color:#353535;
+		background-attachment:fixed;
+		background-image:-webkit-radial-gradient(center,ellipse cover,#0033A4 0%,#232323 100%);
+		background-image:-moz-radial-gradient(center,ellipse cover,#474747 0%,#232323 100%);
+		background-image:-ms-radial-gradient(center,ellipse cover,#474747 0%,#232323 100%);
+		background-image:-o-radial-gradient(center,ellipse cover,#474747 0%,#232323 100%);
+		background-image:radial-gradient(center,ellipse cover,#474747 0%,#232323 100%);color:#f1b11c;
+		text-align:center;
+		font-size: 40px;
+		font-family: 'PT Sans', sans-serif;
+
+		}
+
+div.dialog{
+	width:25em;
+	padding:0 4em;
+	margin:4em auto 0 auto;
+
+}
+	#parent {
+	    padding: 10% 0;
+	}
+
+	#child {
+	    padding: 10% 0;
+	}
+
+
+	input[type="text"] {
+	  
+	  width: 10px;
+	  padding: 10px;
+	  border: none;
+	  border-bottom: solid 1px #000;
+	  box-shadow: inset 1px 1px 2px 0 #000;
+	  transition: box-shadow 0.3s;
+	  background-color: #935347;
+	  color: #fff;
+
+	}
+
+	input[type="submit"] {
+	  
+	    background-color: #0033A4;
+	    border: 2px solid #f1b11c;
+	    color: #f1b11c;
+	    padding: 16px 300px;
+	    text-decoration: none;
+	    margin: 4px 2px;
+	    cursor: pointer;
+	    font-size: 56px;
+		font-family: 'PT Sans', sans-serif;
+
+	}
+	input:hover
+{
+  background-color: #f1b11c;
+  color: #0033A4;
+}
+
+
+
+	html {
+	  text-align: center;
+	}
+
+</style>
+
+<script>
+
+
+
+
+$(window).resize(function(){
+
+	$('.className').css({
+		position:'absolute',
+		left: ($(window).width() - $('.className').outerWidth())/2,
+		top: ($(window).height() - $('.className').outerHeight())/2
+	});
+
+});
+
+// To initially run the function:
+$(window).resize();
+
+// Executes on form submit
+function ValidationEvent() {
+// Storing Field Values In Variables
+
+window.open("/Users/hershelwathore/GitHub/wathoren.github.io/DLA_WORKSHOP.html");
+
+}
+
+</script>
+
+<body oncontextmenu="return false">
+
+<div id="parent">
+		 <div id="child">
+
+			      
+										<img src="nexus.png">
+										<br><br>Use everything at your team's disposal to reach the end<br>
+										<br><br>
+										<form>
+										<input type="submit" value="Next" onclick="return ValidationEvent()">
+
+										</form>
+			      
+		</div>
+</div>
+
+</body>
+</html>
+
