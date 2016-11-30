@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+
+	#child {
+	    padding: 10% 0;
+	}
+	#div1{
+	    display: none;
+	    font-size:800%;
+
+	}
+	#final{
+	    width: 50%;
+
+	}
+	input[type="text"] {
+	  
+	  width: 140px;
+	  height: 120px;
+	  font-size:50%;
+	  padding: 10px;
+	  border: none;
+	  border-bottom: solid 1px #000;
+	  box-shadow: inset 1px 1px 2px 0 #000;
+	  transition: box-shadow 0.3s;
+	  background-color: #df3e2c;
+	  color: #1e2252;
+
+	}
+
+	input[type="submit"] {
+	  
+	    background-color: #ffffff;
+	    border: .6px solid black;
+	    color: #1e2252;
+	    padding: 16px 32px;
+	    text-decoration: none;
+	    margin: 4px 2px;
+	    cursor: pointer;
+    font-size: 64px;
+
+	}
+	input:hover
+	{
+  		background-color: #1e2252;
+  		color: #ffffff;
+	}
+	body {
+	  
+	  background-color: #1e2252;
+ 	font-family: 'PT Sans', sans-serif;
+	  font-weight: bold;
+	  color:#df3e2c;
+	}
+p{
+	  
+	 font-size:800%;
+	}
+	html {
+	  text-align: center;
+	}
+
+#finallo {
+    background-color: #ffffff; /* Green */
+    border: none;
+    color: #1e2252;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 64px;
+}
+</style>
+<script type="text/javascript"><!--  
+/* Script by: www.jtricks.com 
+ * Version: 20090221 
+ * Latest version: 
+ * www.jtricks.com/javascript/blocks/showinghiding.html 
+ */  
+ var count =1;
+  var counttwo =1;
+
+function showPageElement(what)  
+{  
+count++;
+// Storing Field Values In Variables
+var second = document.getElementById("second").value;
+var third = document.getElementById("third").value;
+var fourth = document.getElementById("fourth").value;
+
+// Conditions
+if (second == '401' && third == '307' && fourth == '2139' )
+{
+    var obj = typeof what == 'object'  
+        ? what : document.getElementById(what);  
+  
+    obj.style.display = 'block';  
+    return false;  
+}  
+else {
+  
+if (count < 5) {
+alert("Try again. Hint: Solve for x, y, and z"); // Try Markov
+return false;
+
+}
+if (4<count ) {
+alert("Try again. Hint: Call a math friend"); // Try Markov
+return false;
+
+}
+
+
+  }  
+
+  } 
+
+
+function ValidationEvent() {
+	counttwo++;
+// Storing Field Values In Variables
+var answer = document.getElementById("final").value;
+
+// Conditions
+if (answer == '8' || answer == 'eight' || answer == 'Eight' )
+{
+
+window.open("/Users/hershelwathore/GitHub/wathoren.github.io/dlaworkshop4.html");
+
+} 
+else {
+
+if (counttwo < 4) {
+alert("Don't compute anymore, just write out (x) y - z substituting in the numbers"); // Try Markov
+return false;
+
+}
+if (counttwo>3 ) {
+alert("It's a phone number! After using the phone number, put yourself in the shoes of the videographer (literally)"); // Try Markov
+return false;
+
+}
+
+
+}
+
+}
+//--></script> 
+
+<body>
+
+<div id="parent">
+		 <div id="child">
+
+			      						<p>x - 106 = y <br>z = 8y - 317<br>4x + 3y = z - 225</p>
+										<br><form >
+										<br>
+										<p>
+										x = <input type="text" id="second"> 
+										y = <input type="text" id="third">
+										z = <input type="text" id="fourth"></p>
+
+
+										<br>
+
+										</form>
+											<button  id="finallo"
+    										onclick="showPageElement('div1')">  
+											Next Part</button> 
+										
+										<div id="div1"><br>
+										(x) y - z
+										<br><br>
+										Call and visit to count the number of stars<br><form><input type="text" id="final"><br>
+										<input type="submit" value="Submit" id="lastu" onclick="return ValidationEvent()">
+										</form>
+
+
+										</div>
+			      
+		</div>
+</div>
+
+</body>
+</html>
+
