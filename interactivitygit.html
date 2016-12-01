@@ -1,0 +1,466 @@
+<html>
+
+<style>
+#page_container {position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px dashed gray;
+}
+#page_container img {position: absolute; text-align: center}
+
+input[type="text"] {
+	  
+	  width: 50%;
+	  height:5%;
+	  padding: 10px;
+	  line-height: 1px;
+	  border: none;
+	  border-bottom: solid 1px #000;
+	  box-shadow: inset 1px 1px 2px 0 #000;
+	  transition: box-shadow 0.3s;
+	  background-color: #C0C0C0;
+	  color: #4469fa;
+	  font-size:5%;
+
+	}
+input:hover
+	{
+  		background-color: #3394c1;
+  		color: #C0C0C0;
+	}
+</style>
+<br>
+<input type="text" onkeydown="randomImage()">
+<br>
+<div id="page_container"></div>
+
+
+<script>
+var imgUrl  = "lion king img.jpg";
+var imgUrlyugi  = "yugi.jpg";
+var imgUrldisney  = "disney.jpg";
+var imgUrlwii  = "wii.png";
+var imgUrlgba  = "gba.jpg";
+var imgUrlgamecube  = "gamecube.png";
+var imgUrlplaystation  = "playstation.png";
+var imgUrlcocoa  = "cocoa.jpg";
+var imgUrlgreat  = "great.jpg";
+var imgUrlsnap  = "snap.png";
+var imgUrlcrunch  = "crunch.jpg";
+var imgUrlcharms  = "charms.jpg";
+var imgUrltrix  = "trix.jpg";
+var imgUrljacks  = "jacks.jpg";
+var imgUrlkoolaid  = "koolaid.jpg";
+
+var imgUrlbopit  = "bopit.jpg";
+var imgUrlxbox  = "xbox.png";
+var imgUrlskype  = "skype.png";
+var imgUrlaol  = "aol.png";
+var imgUrlpokemon  = "pokemon.png";
+var imgUrlmotorola  = "motorola.jpg";
+
+var imgUrlavatar  = "avatar.jpg";
+
+window.randomImage = function() 
+{
+
+    var x = event.keyCode;
+    if (x == 69) {  // 83 is the "s" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlyugi;
+elem.setAttribute("height", "200");
+elem.setAttribute("width", "400");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audioyugi");
+       audio.play();
+			}
+if (x == 65) {  // 65 is the "a" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrl;
+elem.setAttribute("height", "300");
+elem.setAttribute("width", "200");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiolion");
+       audio.play();
+			}
+
+			if (x == 68) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlskype;
+elem.setAttribute("height", "200");
+elem.setAttribute("width", "300");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audioskype");
+       audio.play();
+			}
+			if (x == 70) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlavatar;
+elem.setAttribute("height", "200");
+elem.setAttribute("width", "300");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audioavatar");
+       audio.play();
+			}
+
+			if (x == 72) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlplaystation;
+elem.setAttribute("height", "250");
+elem.setAttribute("width", "250");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audioplaystation");
+       audio.play();
+			}
+			if (x == 71) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlwii;
+elem.setAttribute("height", "200");
+elem.setAttribute("width", "300");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiowii");
+       audio.play();
+			}
+			if (x == 73) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlgamecube;
+elem.setAttribute("height", "200");
+elem.setAttribute("width", "300");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiogamecube");
+       audio.play();
+			}
+			if (x == 74) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlgba;
+elem.setAttribute("height", "150");
+elem.setAttribute("width", "250");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiogba");
+       audio.play();
+			}
+			if (x == 75) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlmotorola;
+elem.setAttribute("height", "250");
+elem.setAttribute("width", "250");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiomotorola");
+       audio.play();
+			}
+			if (x == 76) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlpokemon;
+elem.setAttribute("height", "200");
+elem.setAttribute("width", "500");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiopokemon");
+       audio.play();
+			}
+			if (x == 77) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrldisney;
+elem.setAttribute("height", "250");
+elem.setAttribute("width", "400");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiodisney");
+       audio.play();
+			}
+			if (x == 78) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlxbox;
+elem.setAttribute("height", "200");
+elem.setAttribute("width", "300");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audioxbox");
+       audio.play();
+			}
+if (x == 79) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlaol;
+elem.setAttribute("height", "250");
+elem.setAttribute("width", "250");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audioaol");
+       audio.play();
+			}
+if (x == 80) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlbopit;
+elem.setAttribute("height", "300");
+elem.setAttribute("width", "300");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiobopit");
+       audio.play();
+			}
+if (x == 81) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlkoolaid;
+elem.setAttribute("height", "300");
+elem.setAttribute("width", "200");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiokoolaid");
+       audio.play();
+			}
+			if (x == 82) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrltrix;
+elem.setAttribute("height", "300");
+elem.setAttribute("width", "190");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiotrix");
+       audio.play();
+			}
+			if (x == 83) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlcocoa;
+elem.setAttribute("height", "273");
+elem.setAttribute("width", "190");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiococoa");
+       audio.play();
+			}
+if (x == 84) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlgreat;
+elem.setAttribute("height", "300");
+elem.setAttribute("width", "200");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiogreat");
+       audio.play();
+			}
+			if (x == 85) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrljacks;
+elem.setAttribute("height", "200");
+elem.setAttribute("width", "130");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiojacks");
+       audio.play();
+			}
+if (x == 86) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlsnap;
+elem.setAttribute("height", "200");
+elem.setAttribute("width", "130");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiosnap");
+       audio.play();
+			}
+if (x == 87) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlcrunch;
+elem.setAttribute("height", "200");
+elem.setAttribute("width", "130");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiocrunch");
+       audio.play();
+			}
+if (x == 88) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlcharms;
+elem.setAttribute("height", "200");
+elem.setAttribute("width", "140");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiocharms");
+       audio.play();
+			}
+			if (x == 89) {  // 68 is the "d" key
+    var elem = document.createElement("img");
+    var container = document.getElementById("page_container");
+    var availW = container.offsetWidth  - 60;
+    var availH = container.offsetHeight  - 60;
+    var randomY = Math.round(Math.random() * availH) + 'px';
+    var randomX = Math.round(Math.random() * availW) + 'px';
+elem.src = imgUrlpokemon;
+elem.setAttribute("height", "200");
+elem.setAttribute("width", "500");
+elem.style.left = randomX;
+elem.style.top = randomY;
+    container.appendChild(elem);
+    var audio = document.getElementById("audiopokemon");
+       audio.play();
+			}
+
+}
+
+</script>
+<audio id="audioyugi" src="yugi.mp3" ></audio>
+<audio id="audiolion" src="lion1.mp3" ></audio>
+<audio id="audiopokemon" src="pokemon1.mp3" ></audio>
+<audio id="audioavatar" src="avatar1.mp3" ></audio>
+<audio id="audioxbox" src="xbox1.mp3" ></audio>
+<audio id="audiodisney" src="disneyintro_2.mp3" ></audio>
+<audio id="audioaol" src="aol1.mp3" ></audio>
+<audio id="audiobopit" src="bopit1.mp3" ></audio>
+<audio id="audiokoolaid" src="koolaid1.mp3" ></audio>
+<audio id="audioplaystation" src="playstation1.mp3" ></audio>
+<audio id="audiogamecube" src="gamecube1.mp3" ></audio>
+<audio id="audiogba" src="gba1.mp3" ></audio>
+<audio id="audiowii" src="wii1.mp3" ></audio>
+<audio id="audioskype" src="skype1.mp3" ></audio>
+<audio id="audiomotorola" src="motorola1.mp3" ></audio>
+<audio id="audiococoa" src="cocoa2.mp3" ></audio>
+<audio id="audiotrix" src="trix1.mp3" ></audio>
+<audio id="audiocrunch" src="crunch1.mp3" ></audio>
+<audio id="audiosnap" src="snap1.mp3" ></audio>
+<audio id="audiocharms" src="charms1.mp3" ></audio>
+<audio id="audiojacks" src="jacks1.mp3" ></audio>
+<audio id="audiogreat" src="great1.mp3" ></audio>
+
+
+</html>
