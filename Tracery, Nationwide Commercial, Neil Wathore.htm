@@ -37,32 +37,23 @@ h2 { color: #666; font-family: 'Lato', sans-serif; font-size: 24px; font-weight:
 <h1>
 <h3>
 <font color = "008CBA">Based on Nationwide Commercial below</font>
-<br></br>
-<iframe width="420" height="345" src="https://www.youtube.com/embed/wzKjdsRnvho?end=46">
+<br>
 Text will go here
 
-</iframe>
 </h3>
 <button class="button button2" onclick="generate()">Generate</button>
 
 </h1>
 <script>
 var grammarObj = {
-	"sentence": ["I'll never learn to #ride_a_bike# or #get_cuties#. I'll never learn to #fly# or travel the world with my #best_friend#, and I won't ever get #married#. I couldn't grow up because I #died# #from_an_accident#. At #Nationwide#, we believe in #protecting# what matters most, your #kids#: together we can make safe #modifier# happen."],
-	"ride_a_bike": ["swim", "pogo stick", "snowboard", "rollerblade", "deadlift", "squat", "bicep curl", "lick my elbow"],
-	"get_cuties": ["catch pokemon", "play pacman", "listen to #artist# ", "do a #feat#", "drink blueberry wine", "do the electric slide"],
-	"artist": ["Justin Beiber", "Ke$ha", "Rebecca Black", "Kanye", "Beyonce","Ariana Grande", "Selena Gomez", "Little Rock"],
-	"feat": ["pullup", "backflip", "frontflip", "Olie", "kickflip", "windmill", "air flare"],
-	"fly": ["pop and lock", "breakdance", "read", "ride a dragon", "appreciate pickles", "peel a bannana"],
-	"best_friend": ["donkey","aunt","unicorn","serpent","mortal enemy","teddy bear","state representative","father in law","cats","robot"],
-	"married": ["pranked", "heart-broken", "inebriated", "high", "embarrased", "robbed"],
-	"died": ["found a pot of gold", "discovered nirvana", "drank the koolaid", "attained enlightenment", "slipped", "sneezed", "coughed", "spoke", "had fun", "drank milk", "farted"],
-	"from_an_accident": ["on a toilet", "in Starbucks", "near a public restroom", "right by 47th street", "inside a Lady Gaga concert"],
-	"Nationwide": ["Blue Cross Blue Shield", "State Farm", "Geico", "Travellers Insurance", "Aetna", "Cigna"],
-	"protecting": ["stealing", "looting", "pillaging", "taking"],
-	"modifier": ["sort of", "kind of", "almost", "maybe", "sometimes", "possibly"],
-	"kids": ["money", "savings", "salary", "cash", "livelihood", "paycheck"],
-	"eatverb": ["eat", "consume", "ingest", "devour"]
+	"sentence": ["As she #made# the beds, #shopped# for groceries, #matched# slipcover material, #ate# peanut butter sandwiches with her children, #chauffeured# Cub Scouts and Brownies, #lay# beside her husband at night —she was afraid to #ask# even of herself the silent question — Is this all?"],
+	"made": ["prepared", "arranged", "setup", "readied"],
+	"shopped": ["looked", "travelled", "searched"],
+	"matched": ["designed", "mended", "hemmed", "alter"],
+	"ate": ["munched", "chewed", "nibbled", "swallowed"],
+	"chauffeured": ["transported", "drove"],
+	"lay": ["rested","lounged","reclined"],
+	"ask": ["pose", "inquire", "ask"]
 }
 var grammar = tracery.createGrammar(grammarObj)
 function generate(){
