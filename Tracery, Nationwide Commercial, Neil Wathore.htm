@@ -64,7 +64,7 @@
 
 	body {
 	  
-	  background-color: #b570ff;
+	  background-color: #820bcd;
  	font-family: 'PT Sans', sans-serif;
 	  font-weight: bold;
 	  color:#ffba2f;
@@ -111,6 +111,76 @@ function generate(){
 }
 setInterval(generate, 5000)
 
+	
+
+var count =1;
+  var counttwo =1;
+
+function showPageElement(what)  
+{  
+count++;
+// Storing Field Values In Variables
+var second = document.getElementById("second").value;
+var third = document.getElementById("third").value;
+var fourth = document.getElementById("fourth").value;
+
+// Conditions
+if (second == '401' && third == '307' && fourth == '2139' )
+{
+    var obj = typeof what == 'object'  
+        ? what : document.getElementById(what);  
+  
+    obj.style.display = 'block';  
+    return false;  
+}  
+else {
+  
+if (count < 5) {
+alert("Try again. Hint: Solve for x, y, and z"); // Try Markov
+return false;
+
+}
+if (4<count ) {
+alert("Try again. Hint: Call a math friend"); // Try Markov
+return false;
+
+}
+
+
+  }  
+
+  } 
+
+
+function ValidationEvent() {
+	counttwo++;
+// Storing Field Values In Variables
+var answer = document.getElementById("final").value;
+
+// Conditions
+if (answer == '8' || answer == 'eight' || answer == 'Eight' )
+{
+
+window.open("/Users/hershelwathore/GitHub/wathoren.github.io/dlaworkshop4.html");
+
+} 
+else {
+
+if (counttwo < 4) {
+alert("Don't compute anymore, just write out (x) y - z substituting in the numbers"); // Try Markov
+return false;
+
+}
+if (counttwo>3 ) {
+alert("It's a phone number! After using the phone number, put yourself in the shoes of the videographer (literally)"); // Try Markov
+return false;
+
+}
+
+
+}
+
+}
 </script>
 <body oncontextmenu="return false">
 
