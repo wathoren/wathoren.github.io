@@ -120,12 +120,10 @@ function showPageElement(what)
 {  
 count++;
 // Storing Field Values In Variables
-var second = document.getElementById("second").value;
-var third = document.getElementById("third").value;
-var fourth = document.getElementById("fourth").value;
+var first = document.getElementById("first").value;
 
 // Conditions
-if (second == '401' && third == '307' && fourth == '2139' )
+if (first == 'No Name' || first == 'no name' )
 {
     var obj = typeof what == 'object'  
         ? what : document.getElementById(what);  
@@ -136,12 +134,12 @@ if (second == '401' && third == '307' && fourth == '2139' )
 else {
   
 if (count < 5) {
-alert("Try again. Hint: Solve for x, y, and z"); // Try Markov
+alert("Try again. Hint: Who's in the picture?"); // Try Markov
 return false;
 
 }
 if (4<count ) {
-alert("Try again. Hint: Call a math friend"); // Try Markov
+alert("Try again. Hint: The line is an edited quote from Betty Friedan"); // Try Markov
 return false;
 
 }
@@ -193,11 +191,10 @@ return false;
 
 										<form >
 										<p > <input type="text" id="first">
-										 
 										 </p>
 										  <input type="submit" value="Submit" onclick="return ValidationEvent()">
 										</form>
-			 <button  id="finallo"
+			 							<button  id="finallo"
     										onclick="showPageElement('div1')">  
 											Next Part</button> 
 										
