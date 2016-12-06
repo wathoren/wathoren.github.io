@@ -10,7 +10,25 @@
 	#child {
 	    padding: 10% 0;
 	}
+		#div1{
+	    display: none;
+	    font-size:800%;
 
+	}
+	#final{
+	    width: 50%;
+
+	}
+#finallo {
+    background-color: #ffffff; /* Green */
+    border: none;
+    color: #1e2252;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 64px;
+}
 	input[type="text"] {
 	  
 	  width: 400px;
@@ -46,10 +64,10 @@
 
 	body {
 	  
-	  background-color: #fff;
+	  background-color: #b570ff;
  	font-family: 'PT Sans', sans-serif;
 	  font-weight: bold;
-	  color:#4469fa;
+	  color:#ffba2f;
 
 	}
 p{
@@ -65,10 +83,10 @@ p{
 
 	}
 
-h3 { color: #ffffff; font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 300; line-height: 20px; margin: 0 0 20px; }
+h3 { color: #ffba2f; font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 300; line-height: 20px; margin: 0 0 20px; }
 
 
-h2 { color: #666; font-family: 'Lato', sans-serif; font-size: 24px; font-weight: 300; line-height: 40px; margin: 0 0 24px; }
+h2 { color: #ffba2f; font-family: 'Lato', sans-serif; font-size: 24px; font-weight: 300; line-height: 40px; margin: 0 0 24px; }
 </style>
 	
 </head>
@@ -100,7 +118,7 @@ setInterval(generate, 5000)
 		 								
 										<div id="parent">
 		 <div id="child">
-			      						<img src="/Users/hershelwathore/GitHub/wathoren.github.io/Mii_Instruct.png"><br>
+			      							<img src="betty.jpg"><br>
 										<h2></h2>
 
 										<form >
@@ -108,6 +126,16 @@ setInterval(generate, 5000)
 										 
 										 </p>
 										  <input type="submit" value="Submit" onclick="return ValidationEvent()">
+										</form>
+			 <button  id="finallo"
+    										onclick="showPageElement('div1')">  
+											Next Part</button> 
+										
+										<div id="div1"><br>
+										(x) y - z
+										<br><br>
+										Call and visit to count the number of stars<br><form><input type="text" id="final"><br>
+										<input type="submit" value="Submit" id="lastu" onclick="return ValidationEvent()">
 										</form>
 			      
 		</div>
