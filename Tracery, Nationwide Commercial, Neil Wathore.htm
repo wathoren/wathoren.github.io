@@ -3,37 +3,77 @@
 <script src="../lib/jquery-1.11.1.min.js"></script>
 <head>
 <style>
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-.button2 {
-    background-color: #008CBA;
-    color: white;
-    border: 2px solid #008CBA;
-}
+#parent {
+	    padding: 10% 0;
+	}
 
-.button2:hover {
-    background-color: white;
-    color: #008CBA;
-}
+	#child {
+	    padding: 10% 0;
+	}
+
+	input[type="text"] {
+	  
+	  width: 400px;
+	  height:15px;
+	  padding: 10px;
+	  line-height: 1px;
+	  border: none;
+	  border-bottom: solid 1px #000;
+	  box-shadow: inset 1px 1px 2px 0 #000;
+	  transition: box-shadow 0.3s;
+	  background-color: #C0C0C0;
+	  color: 4469fa;
+
+	}
+
+	input[type="submit"] {
+	  
+	    background-color: #C0C0C0;
+	    border: .6px solid black;
+	    color: 4469fa;
+	    padding: 16px 32px;
+	    text-decoration: none;
+	    margin: 4px 2px;
+	    cursor: pointer;
+
+
+	}
+	input:hover
+	{
+  		background-color: #C0C0C0;
+  		color: #3394c1;
+	}
+
+	body {
+	  
+	  background-color: #fff;
+ 	font-family: 'PT Sans', sans-serif;
+	  font-weight: bold;
+	  color:#4469fa;
+
+	}
+p{
+	  
+	 font-size:28px;
+
+	 vertical-align: sub;
+
+	}
+	html {
+	  text-align: center;
+	  
+
+	}
+
 h3 { color: #ffffff; font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 300; line-height: 20px; margin: 0 0 20px; }
 
 
 h2 { color: #666; font-family: 'Lato', sans-serif; font-size: 24px; font-weight: 300; line-height: 40px; margin: 0 0 24px; }
 </style>
+	
 </head>
-<h2></h2>
+
+
 
 <script>
 var grammarObj = {
@@ -54,3 +94,23 @@ function generate(){
 setInterval(generate, 5000)
 
 </script>
+<body oncontextmenu="return false">
+
+
+		 								
+										<div id="parent">
+		 <div id="child">
+			      						<img src="/Users/hershelwathore/GitHub/wathoren.github.io/Mii_Instruct.png"><br>
+										<h2></h2>
+
+										<form >
+										<p > <input type="text" id="first">
+										 
+										 </p>
+										  <input type="submit" value="Submit" onclick="return ValidationEvent()">
+										</form>
+			      
+		</div>
+</div>
+
+</body>
