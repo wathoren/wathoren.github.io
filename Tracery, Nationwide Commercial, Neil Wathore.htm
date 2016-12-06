@@ -34,16 +34,7 @@ h2 { color: #666; font-family: 'Lato', sans-serif; font-size: 24px; font-weight:
 </style>
 </head>
 <h2></h2>
-<h1>
-<h3>
-<font color = "008CBA">Based on Nationwide Commercial below</font>
-<br>
-Text will go here
 
-</h3>
-<button class="button button2" onclick="generate()">Generate</button>
-
-</h1>
 <script>
 var grammarObj = {
 	"sentence": ["As she #made# the beds, #shopped# for groceries, #matched# slipcover material, #ate# peanut butter sandwiches with her children, #chauffeured# Cub Scouts and Brownies, #lay# beside her husband at night —she was afraid to #ask# even of herself the silent question — Is this all?"],
@@ -60,4 +51,6 @@ function generate(){
 	var t = grammar.flatten("#sentence#");
 	$('h2').text(t);
 }
+setInterval(generate, 5000)
+
 </script>
