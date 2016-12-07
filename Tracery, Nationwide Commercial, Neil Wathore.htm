@@ -12,11 +12,19 @@
 	}
 		#div1{
 	    display: none;
-	    font-size:800%;
+	    font-size:600%;
 
 	}
 	#final{
 	    width: 50%;
+
+	}
+	#namef{
+	    width: 35px;
+
+	}
+	#first{
+	    width: 35px;
 
 	}
 #finallo {
@@ -121,9 +129,10 @@ function showPageElement(what)
 count++;
 // Storing Field Values In Variables
 var first = document.getElementById("first").value;
+var segundo = document.getElementById("name").value;
 
 // Conditions
-if (first == 'No Name' || first == 'no name' )
+if ((first == 'problem' || first =='Problem' ) && (segundo == 'name' || segundo == 'Name') )
 {
     var obj = typeof what == 'object'  
         ? what : document.getElementById(what);  
@@ -190,7 +199,7 @@ return false;
 										<h2></h2>
 
 										<form >
-										<p > <input type="text" id="first">
+										<p >The <input type="text" id="first"> that has no <input type="text" id="namef">
 										 </p>
 										</form>
 			 							<button  id="finallo"
